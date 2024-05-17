@@ -1,0 +1,336 @@
+header {
+  height: 120px;
+  z-index: 10000;
+}
+
+.max-width {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+header li {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: rgba(49, 49, 49, 1);
+  height: 40px;
+
+}
+
+.hero-content {
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-btn {
+  background: rgba(204, 204, 204, 0.5);
+  height: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.services-title {
+  color: rgba(231, 19, 57, 1);
+
+}
+
+.overlay {
+  background: rgba(231, 19, 57, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: all 1.5s;
+}
+
+.item:hover .overlay {
+  opacity: 0;
+}
+
+.item2 img {
+  width: 100%;
+}
+
+.item {
+  height: 170px;
+}
+
+.item img {
+  height: 170px;
+
+  position: absolute;
+  transition: all 1s;
+
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.item:hover img {
+  position: relative;
+  height: 170px;
+  transform: scaleX(0.4);
+  position: absolute;
+}
+
+
+
+
+.item-text {
+  height: 170px;
+  transform: scaleX(0);
+  transition: all 1s;
+  transform-origin: left;
+  background: rgba(231, 19, 57, 1);
+
+
+}
+
+@keyframes main {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.item:hover .item-text {
+  transform: scaleX(1);
+  padding: 15px;
+  width: 60%;
+}
+
+.item p {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.item:hover p {
+  opacity: 1
+}
+
+.item:hover .title {
+  opacity: 0;
+  transition: all .6s;
+}
+
+.icon2 {
+  transition: all 1s;
+}
+
+.item:hover .icon2 {
+  transform: rotate(-45deg) translate(-20px, -50px) scale(0.7);
+
+}
+
+
+
+.overlay-green {
+  background: green;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all ease 0.9s;
+}
+
+.item2:hover>.overlay-green {
+  opacity: 0.5;
+
+}
+
+.item2 .icon {
+  transition: all ease 0.9s;
+}
+.item2:hover .icon {
+  transform: scale(1.4);
+  margin-right: 10px;
+  transition: all ease 0.9s;
+}
+
+.service-content {
+  top: 11%;
+  left: 14%;
+  z-index: 2;
+  height: 80%;
+}
+
+.service-content h4 {
+  width: min-content;
+}
+
+.row-cols-4>* {
+  flex: 0 0 auto;
+  width: 23% !important;
+}
+
+
+.dropdown ul {
+  margin-right: 40px;
+  margin-left: 10px;
+}
+
+.dropdown ul li {
+  margin-bottom: 15px;
+  text-align: left;
+  width: max-content;
+}
+
+.border-b {
+  border-bottom: 1px solid rgba(49, 49, 49, 1);
+}
+
+.dropdown ul li:first-child {
+  position: relative;
+  font-size: 17px;
+}
+
+.dropdown ul li:first-child::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  width: 3%;
+  height: 100%;
+  background: #000;
+}
+
+.dropdown ul li.text-success:first-child::before {
+
+  background: green;
+}
+
+.mt-10 {
+  margin-top: 70px;
+}
+
+.dropdown {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 11;
+}
+
+.header:hover .dropdown {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.header {
+  z-index: 1;
+  background: #fff;
+}
+
+header {
+  z-index: 1;
+  background: #fff;
+}
+
+
+
+
+
+.hero-btn:hover {
+  background: blue;
+  transform: translateY(-20px);
+
+}
+
+.nav-btn:hover {
+  background: blue;
+
+
+}
+
+
+
+.slick-left {
+
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+}
+
+.slick-right {
+
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+}
+
+.slick-right:hover .center {
+  transform: translate(-30%, -50%);
+}
+
+.slick-left:hover .center {
+  transform: translate(-60%, -50%);
+}
+
+.slider .slick-dots {
+  bottom: 20px;
+  padding-left: 150px;
+  text-align: left;
+}
+
+.slider .slick-dots li {
+  width: 60px;
+  height: 60px;
+}
+
+.slider .slick-dots li button::before {
+  color: #fff;
+  font-size: 12px;  opacity: 1;
+
+}
+
+.slider .slick-dots li.slick-active button::before {
+  opacity: 1;
+  color: #fff;
+}
+
+.slider .slick-dots li{
+  transition: border-color 1s;
+}
+
+.slider .slick-dots li:hover {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+
+}
+
+.slider .slick-dots li.slick-active {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+
+}
+
+.slider .slick-dots li button {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
